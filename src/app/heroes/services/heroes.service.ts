@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class HeroesService {
 
-  private baseUrl: string = environment.baeUrl;
+  private baseUrl: string = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
   

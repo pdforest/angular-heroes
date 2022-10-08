@@ -6,6 +6,7 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ErrorPageComponent } from '../shared/error-page/error-page.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
       { path: 'editar/:id', component: AgregarComponent },
       { path: 'buscar', component: BuscarComponent },
       { path: ':id', component: HeroeComponent },
-      { path: '**', redirectTo: 'listado' },
+      { path: '404', component: ErrorPageComponent},
+      { path: '**', redirectTo: 'listado' }
     ]
   }
 ]
