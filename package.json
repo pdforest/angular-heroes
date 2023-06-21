@@ -10,7 +10,9 @@
     "delete:docs": "del-cli docs -f",
     "build:href": "ng build --base-href ./",
     "copy:dist": "copyfiles dist/heroes-app/* ./docs -f",
-    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist"
+    "copy:assets": "copyfiles src/assets/* ./docs/assets -f",
+    "copy:assets:heroes": "copyfiles src/assets/heroes/* ./docs/assets/heroes -f",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist && npm run copy:assets && npm run copy:assets:heroes"
   },
   "private": true,
   "dependencies": {
