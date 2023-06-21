@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:3000'
+  //baseUrl: 'http://localhost:3000'
+  baseUrl: 'https://my-json-server.typicode.com/pdforest/angular-heroes-auth'
 };
 
 /*
